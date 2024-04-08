@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: teal;
+}
+
+.nav .nav_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  font-size: 20px;
+  position: relative;
+}
+
+.nav_list a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav_list ul li a:hover {
+  color: black;
+  background-color: aliceblue;
+}
+
+.nav_list ul {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  color: black;
+  padding: 20px;
+  list-style: none;
+}
+
+.nav_list ul li {
+  margin-bottom: 5px;
+}
+
+.nav_list ul.active {
+  display: block;
+}
